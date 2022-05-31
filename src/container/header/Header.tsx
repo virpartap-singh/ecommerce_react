@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
+import Announcement from "./Announcement";
 
-const Header:React.FC=()=> {
+const Header: React.FC = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <>
+    <Announcement/>
+      <Navbar />
+    </>
+  );
+};
 
-export default Header
+export default Header;

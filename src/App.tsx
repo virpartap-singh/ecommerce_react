@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Layout from './container/layout/Layout';
+import Home from "./pages/Home"
 
 const App : React.FC = () => {
   return (
     <div className="App">
-        <Layout>
-          body
-        </Layout>
+        <Home/>
     </div>
   );
 }

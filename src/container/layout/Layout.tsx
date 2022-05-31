@@ -6,7 +6,7 @@ interface Iprops {
   children: React.ReactNode;
 }
 
-const layout: React.FC<Iprops> = ({ children }) => {
+const Layout: React.FC<Iprops> = ({ children }) => {
   return (
     <>
       <div>
@@ -22,4 +22,4 @@ const layout: React.FC<Iprops> = ({ children }) => {
   );
 };
 
-export default layout;
+export default Layout;
