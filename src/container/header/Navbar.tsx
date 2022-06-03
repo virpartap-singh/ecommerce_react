@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
@@ -61,6 +62,7 @@ const MenuItem = styled.div`
 `;
 
 const Navbar: React.FC = () => {
+  let navigate = useNavigate();
   return (
     <Container>
       <Wrapper>
@@ -75,8 +77,8 @@ const Navbar: React.FC = () => {
           <Logo>FRAIZER</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGNIN</MenuItem>
+          <MenuItem onClick={()=>navigate("/register")}>REGISTER</MenuItem>
+          <MenuItem onClick={()=>navigate("/login")}>SIGNIN</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="secondary">
               <ShoppingCartOutlinedIcon color="action" />
