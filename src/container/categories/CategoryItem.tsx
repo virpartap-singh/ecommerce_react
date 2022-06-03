@@ -44,9 +44,9 @@ const Button = styled.button`
 const CategoryItem:React.FC=({item}:any):React.ReactElement=> {
   return (
     <Container>
-      <Image src={item.img} />
+      <Image src={item?.img} />
       <Info>
-        <Title>{item.title}</Title>
+        <Title>{item?.title}</Title>
         <Button>SHOP NOW</Button>
       </Info>
     </Container>

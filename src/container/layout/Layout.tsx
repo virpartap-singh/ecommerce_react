@@ -16,7 +16,7 @@ const Layout: React.FC<Iprops> = ({ children }) => {
           {children}
       </div>
       <div>
-          <Footer title="Footer" />
+          <Footer />
       </div>
     </>
   );
