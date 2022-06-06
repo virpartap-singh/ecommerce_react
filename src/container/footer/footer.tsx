@@ -85,7 +85,7 @@ const footer:React.FC=():React.ReactElement=> {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>Fraizer.</Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -111,8 +111,8 @@ const footer:React.FC=():React.ReactElement=> {
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
+          <ListItem>Man Sports</ListItem>
+          <ListItem>Woman Sports</ListItem>
           <ListItem>Accessories</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
@@ -130,7 +130,7 @@ const footer:React.FC=():React.ReactElement=> {
           <Phone style={{marginRight:"10px"}}/> +1 234 56 78
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
+          <MailOutline style={{marginRight:"10px"}} /> contact@Fraizer.dev
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
