@@ -4,15 +4,15 @@ import Toast from "./components/Toaster/Toast";
 import useLocalStorage from "./utils/localStorage";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
-const Login = lazy(() => import("./pages/Login"));
-const Register = lazy(() => import("./pages/Register"));
+const Login = lazy(() => import("./pages/Login/Login"));
+const Register = lazy(() => import("./pages/Register/Register"));
 // const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard"));
 // const Post = lazy(() => import("./pages/Post/Post"));
 // const Card = lazy(() => import("./pages/Cards/Cards"));
 // const Admin = lazy(() => import("./pages/Admin/Admin"));
 // const My404 = lazy(() => import("./pages/My404/My404"));
 // const Test = lazy(() => import("./pages/Test/Test"));
-const Home = lazy(() => import("./pages/Home"));
+const Home = lazy(() => import("./pages/Home/Home"));
 
 const AppRoutes: React.FC = () => {
   return (
