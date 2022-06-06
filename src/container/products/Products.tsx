@@ -11,7 +11,6 @@ const Container = styled.div`
 `;
 
 const Products:React.FC = (props:any):React.ReactElement => {
-  const pProducts = popularProducts;
   return (
     <Container>
       {

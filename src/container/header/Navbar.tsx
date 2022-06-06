@@ -4,10 +4,14 @@ import SearchIcon from "@mui/icons-material/Search";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useNavigate } from "react-router-dom";
+import {device} from "../../utils/Device"
+
 
 const Container = styled.div`
   height: 60px;
-//   background-color: #595856;
+  @media ${device.mobileL} { 
+   display : none;
+  }
 `;
 
 const Wrapper = styled.div`
