@@ -65,7 +65,6 @@ const Icon = styled.div`
 `;
 
 const Product:React.FC=({item}:any):React.ReactElement=> {
-  console.log(item,"item")
   return (
     <Container>
     <Circle />

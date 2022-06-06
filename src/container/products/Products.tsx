@@ -11,9 +11,11 @@ const Container = styled.div`
 `;
 
 const Products:React.FC = (props:any):React.ReactElement => {
+  const pProducts = popularProducts;
   return (
     <Container>
-      {popularProducts.map((item:any) => (
+      {
+      popularProducts.map((item:any) => (
         <Product {...props} item={item} key={item.id} />
       ))}
     </Container>
