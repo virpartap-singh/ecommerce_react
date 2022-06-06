@@ -7,6 +7,7 @@ import Pinterest from '@mui/icons-material/Pinterest';
 import Room from '@mui/icons-material/Room';
 import MailOutline from '@mui/icons-material/MailOutline';
 import Phone from '@mui/icons-material/Phone';
+import {device} from "../../utils/Device"
 
 // interface Iprops {
 //     title: String
@@ -14,6 +15,9 @@ import Phone from '@mui/icons-material/Phone';
 
 const Container = styled.div`
   display: flex;
+  @media ${device.mobileL} { 
+     flex-direction:column;
+   }
 `;
 
 const Left = styled.div`
@@ -47,6 +51,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  @media ${device.mobileL} { 
+    display:none;
+  }
 `;
 
 const Title = styled.h3`
@@ -69,6 +76,9 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  @media ${device.mobileL} { 
+    backgroundColor: #fff8f8;
+  }
 `;
 
 const ContactItem = styled.div`

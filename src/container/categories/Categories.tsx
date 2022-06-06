@@ -2,11 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { categories } from "../../assets/Data/data";
 import CategoryItem from "./CategoryItem";
+import { device } from "../../utils/Device"
 
 const Container = styled.div`
   display: flex;
   padding: 20px;
   justify-content: space-between;
+  @media ${device.mobileL} { 
+    padding: 0px;
+     flex-direction:column;
+   }
 `;
 
 
