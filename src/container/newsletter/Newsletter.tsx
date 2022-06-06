@@ -48,7 +48,7 @@ const Newsletter:React.FC=():React.ReactElement=> {
   return (
     <Container>
     <Title>Newsletter</Title>
-    <Desc>Get timely updates from your sakura.</Desc>
+    <Desc>Get timely updates from your favorite.</Desc>
     <InputContainer>
       <Input placeholder="Your email" />
       <Button>
