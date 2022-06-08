@@ -8,6 +8,7 @@ const Login = lazy(() => import("./pages/Login/Login"));
 const Register = lazy(() => import("./pages/Register/Register"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Products = lazy(() => import("./pages/ProductList/ProductListPage"));
+const SingleProduct = lazy(()=> import("./pages/SingleProduct/SingleProduct"))
 const Cart = lazy(() => import("./pages/Cart/Cart"));
 // const Post = lazy(() => import("./pages/Post/Post"));
 // const Card = lazy(() => import("./pages/Cards/Cards"));
@@ -24,7 +25,8 @@ const AppRoutes: React.FC = () => {
           <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
-          <Route path="/products" element={<Products/>} />
+          <Route path="/products/:category" element={<Products/>} />
+          <Route path="/product/:id" element={<SingleProduct/>} />
           <Route path="/cart" element={<Cart/>} />
           {/* <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
