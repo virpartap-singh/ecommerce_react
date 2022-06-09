@@ -2,8 +2,11 @@ import React from 'react'
 import Layout from '../../container/layout/Layout'
 import { Title, FilterContainer, Filter, FilterText, Select, Option } from './PLstyles'
 import Products from '../../container/products/Products'
+import { useLocation } from 'react-router-dom';
 
 const ProductListPage:React.FC=():React.ReactElement=>{
+  const location = useLocation();
+  console.log(location.pathname.split("/")[2]);
   return (
     <Layout>
     <Title>Dresses</Title>
