@@ -10,7 +10,14 @@ const Container = styled.div`
     justify-content: space-between;
 `;
 
-const Products:React.FC = (props:any):React.ReactElement => {
+const Products:React.FC = ({
+  props,
+  cat,
+  filter,
+  sort
+}:any):React.ReactElement => {
+
+  console.log(cat,filter,sort)
   return (
     <Container>
       {
