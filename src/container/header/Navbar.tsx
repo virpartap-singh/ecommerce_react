@@ -17,7 +17,7 @@ import {
   Input
 } from "./NavbarStyle";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = ():React.ReactElement => {
   let navigate = useNavigate();
   return (
     <Container>
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
         <Right>
           <MenuItem onClick={() => navigate("/register")}>REGISTER</MenuItem>
           <MenuItem onClick={() => navigate("/login")}>SIGNIN</MenuItem>
-          <MenuItem>
+          <MenuItem onClick={() => navigate("/cart")}>
             <Badge badgeContent={4} color="secondary">
               <ShoppingCartOutlinedIcon color="action" />
             </Badge>
